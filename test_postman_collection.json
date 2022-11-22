@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "06ff7fab-67b7-42b2-9f02-47d9bf194aa3",
+		"name": "Code Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://ppsshop.com/api/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Saravanan",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "sarabtech@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "username",
+							"value": "sarabtech",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "test1234",
+							"type": "default"
+						},
+						{
+							"key": "sex",
+							"value": "Male",
+							"type": "default"
+						},
+						{
+							"key": "profile_image",
+							"type": "file",
+							"src": "/home/manir/Downloads/2.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ppsshop.com/api/user/CreateUser",
+					"protocol": "http",
+					"host": [
+						"ppsshop",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"CreateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ppsshop.com/api/user/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "sarabtech",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "test1234",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ppsshop.com/api/user/login",
+					"protocol": "http",
+					"host": [
+						"ppsshop",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ppsshop.com/api/getmenu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ppsshop.com/api/getmenu",
+					"protocol": "http",
+					"host": [
+						"ppsshop",
+						"com"
+					],
+					"path": [
+						"api",
+						"getmenu"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
